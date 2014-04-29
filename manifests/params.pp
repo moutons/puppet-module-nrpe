@@ -62,6 +62,7 @@ class nrpe::params {
       $nrpe_packages    = [
         'nrpe',
         'nagios-plugins-all',
+      ]
     }
     default:   {
     }
