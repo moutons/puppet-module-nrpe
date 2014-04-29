@@ -25,19 +25,6 @@ class nrpe::params {
         'nagios-plugins',
       ]
     }
-    'Solaris': {
-      $libdir           = '/opt/csw/libexec/nagios-plugins'
-      $nrpe_user        = 'nagios'
-      $nrpe_group       = 'nagios'
-      $nrpe_pid_file    = '/var/run/nrpe.pid'
-      $nrpe_config      = '/etc/opt/csw/nrpe.cfg'
-      $nrpe_include_dir = '/etc/opt/csw/nrpe.d'
-      $nrpe_service     = 'cswnrpe'
-      $nrpe_packages    = [
-        'nrpe',
-        'nagios_plugins',
-      ]
-    }
     'RedHat':  {
       $libdir           = '/usr/lib64/nagios/plugins'
       $nrpe_user        = 'nrpe'
